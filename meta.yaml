@@ -1,0 +1,16 @@
+name: "JoinLeaveMessages"
+description: "Sends global message on player connect/disconnect"
+version: "1.0.0"
+backend: "BF3"
+entry: "index.js"
+vars:
+  - name: "joinMessage"
+    description: "message that will be sent on player connection (%name% will be replaced by player name)"
+    type: "string"
+    multiline: false
+    default: "%name% is joining"
+  - name: "leaveMessage"
+    description: "message that will be sent on player leave (%name% will be replaced by player name)"
+    type: "string"
+    multiline: false
+    default: "%name% has left"
